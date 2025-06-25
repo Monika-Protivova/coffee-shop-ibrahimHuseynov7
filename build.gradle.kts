@@ -7,7 +7,7 @@ group = "com.motycka.edu"
 version = "0.0.1"
 
 application {
-    mainClass = "io.ktor.server.netty.EngineMain"
+    mainClass = "com.motycka.edu.ApplicationKt" // Corrected main class
 }
 
 repositories {
