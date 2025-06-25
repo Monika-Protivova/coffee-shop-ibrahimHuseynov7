@@ -8,5 +8,6 @@ data class OrderResponse(
     val id: OrderId,
     val menuItems: List<OrderItemResponse>,
     val totalPrice: Double,
-    val status: OrderStatus
+    val status: OrderStatus,
+    val isPaid: Boolean // Added isPaid
 )

@@ -4,6 +4,8 @@ import com.motycka.edu.customer.CustomerDAO
 import com.motycka.edu.customer.CustomerTable
 import com.motycka.edu.menu.MenuItemDAO
 import com.motycka.edu.menu.MenuItemTable
+import com.motycka.edu.order.OrderItemTable // Import OrderItemTable
+import com.motycka.edu.order.OrderTable // Import OrderTable
 import com.motycka.edu.user.UserDAO
 import com.motycka.edu.user.UserRole
 import com.motycka.edu.user.UserTable
@@ -27,6 +29,8 @@ fun Application.configureDatabases() {
         SchemaUtils.create(UserTable)
         SchemaUtils.create(MenuItemTable)
         SchemaUtils.create(CustomerTable)
+        SchemaUtils.create(OrderTable) // Add OrderTable creation
+        SchemaUtils.create(OrderItemTable) // Add OrderItemTable creation
 
         UserDAO.new {
             username = "admin"
